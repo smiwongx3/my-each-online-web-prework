@@ -3,4 +3,6 @@ def my_each(collection)
   
   collection.each do |number|
   "#{number}"
+  end
+  my_each 
 end
