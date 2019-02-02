@@ -1,8 +1,8 @@
 def my_each(collection)
-  collection = [1, 2, 3, 4]
-  
-  collection.each do |number|
-  "#{number}"
+  i = 0
+  while i < collection.length
+    yield(collection[i])
+    i = i + 1
   end
-  my_each 
+  collection
 end
